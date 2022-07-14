@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "install-client": "cd client && npm run serve",
+    "go": "npm run install-client && npm start",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +18,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.4",
-    "morgan": "^1.10.0",
-    "vue": "^3.2.37"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
