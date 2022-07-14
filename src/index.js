@@ -13,7 +13,7 @@ const app = express();
 //app.use(morgan('common'));
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://10.0.0.163:8080'
+    origin: 'https://message-api.herokuapp.com/'
 }));
 app.use("/", routes);
 
@@ -25,6 +25,11 @@ const port = process.env.PORT || 1337;
 app.listen(port, () => {
     console.log('listening at ' + port);
 });
+
+
+if (process.env.NODE.ENV === 'production'){
+    app.use(express.static('client/src'));
+}
 
 
 
