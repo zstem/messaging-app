@@ -1,15 +1,15 @@
 {
-  "name": "full-stack",
+  "name": "messaging-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client": "cd client && npm start",
     "install-client": "cd client && npm i",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
