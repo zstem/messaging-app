@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "heroku-postbuild": "npm run go",
-    "install-client": "cd client && npm run serve",
+    "install-client": "cd client && npm i",
     "go": "npm run install-client && npm start",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
